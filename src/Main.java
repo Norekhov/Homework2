@@ -61,8 +61,8 @@ public class Main {
         var allEmployee = allTime / timeForOneEmployee;
         System.out.println("Всего работников в компании - " + allEmployee + " человек");
 
-        var newAllEmployee = allEmployee + 94;
-        var newAllTime = newAllEmployee * 8;
-        System.out.println("Если в компании работает " + newAllEmployee + " человек, то всего " + newAllTime + " часов работы может быть поделено между сотрудниками.");
+        allEmployee = allEmployee + 94;
+        var newAllTime = allEmployee * timeForOneEmployee;
+        System.out.println("Если в компании работает " + allEmployee + " человек, то всего " + newAllTime + " часов работы может быть поделено между сотрудниками.");
     }
 }
